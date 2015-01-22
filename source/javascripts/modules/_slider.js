@@ -14,6 +14,18 @@ $(document).ready(function(){
 
 	$('.slider').click(function(){ next(); });
 
+	$(".slider-bullets").each(function(index, element){
+		for(var i=0;i<slides.length;i++){
+			var bullet = $('<a class="bullet">&#8226;</a>').appendTo(element);
+			function addClickHandler(bullet, i){
+				bullet.click(function(){
+					console.log("yay: " + i);
+				});
+			};
+			addClickHandler(bullet, i);
+		}
+	});
+
 	function increaseIndex(){
 		sliderIndex = sliderIndex == slides.length-1 ? 0 : sliderIndex+1;
 		notifyIndexChanged();
@@ -25,7 +37,7 @@ $(document).ready(function(){
 	}
 
 	function notifyIndexChanged(){
-		sliderIndexes.text(sliderIndex+1)
+		sliderIndexes.text(sliderIndex+1);
 	}
 
 	function next(){

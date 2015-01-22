@@ -7,6 +7,10 @@
 	padding-bottom:20px;
 }
 
+.slider img:hover {
+	cursor: pointer;
+}
+
 .slider > * {
 	display: none;
 	width:inherit;
@@ -33,6 +37,18 @@
 	cursor: pointer;
 	font-weight: 100;
 
+}
+
+.slider-controls {
+	a {
+		color: white;
+		font-size: 0.9em;
+		padding:0;
+	}
+
+	a:hover {
+		color: #bbb;
+	}
 }
 
 .slider .introduction {
@@ -75,3 +91,29 @@
 .slider-controls > * {
 	vertical-align: middle;
 }
+
+.slider-bullets {
+	font-size: 5em;
+	margin-top: -32px;
+	line-height: 10px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	float: right;
+
+	.bullet {
+		display: block;
+		padding:0px;
+		padding-bottom: 7px;
+		float: left;
+		margin: 0;
+	}
+
+	.bullet:hover {
+		cursor: pointer;
+	}
+
+	.bullet.active {
+		color: rgb(66, 144, 66);
+	}
+}
+

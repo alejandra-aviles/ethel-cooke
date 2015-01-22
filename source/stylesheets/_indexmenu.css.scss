@@ -24,10 +24,20 @@
 .proyect:hover {
 	p {
 		z-index: 1000;
+		// text-shadow: 1px 1px rgba(0,0,0, 0.4), 1px -1px rgba(0,0,0, 0.4), -1px -1px rgba(0,0,0, 0.4), -1px 1px rgba(0,0,0, 0.4);
 	}
 
 	a {
-		background-color: red;
+		// background-color: red;
+	}
+
+	img {
+		// -webkit-filter: blur(2px);
+	 //  	-moz-filter: blur(2px);
+	 //  	-o-filter: blur(2px);
+	 //  	-ms-filter: blur(2px);
+	 //  	filter: blur(2px);
+	 //  	transition: 0.1s -webkit-filter linear;
 	}
 
 	.cover {
@@ -37,7 +47,7 @@
 		right:0;
 		bottom:0;
 		display: block;
-		background-color: rgba(255, 200, 200, 0.9);
+		background-color: rgba(0,0,0, 0.5);
 	}
 }
 
@@ -52,9 +62,16 @@
 
 		p {
 			position: absolute;
-			top:50%;
+			top:45%;
 			width:100%;
 			text-align: center;
+			font-size: 1.5em;
+			font-weight: 200;
+			letter-spacing: 1px;
+		}
+
+		img {
+
 		}
 	}
 	.cover {

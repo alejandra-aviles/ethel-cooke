@@ -21,7 +21,7 @@
 		width:50%;
 		p {
 		font-weight: 100;
-		line-height: 1.6em;
+		line-height: 1.8em;
 		font-size: 0.8em;
 		letter-spacing: 0.7px;
 		font-style: normal;
@@ -69,12 +69,11 @@
 	}
 
 	.column-medios {
-		width: 49.5%;
+		width: 49%;
 	}
 
 	.column-medios + .column-medios {
-		width:49.5%;
-		margin-left:1%;
+		margin-left:2%;
 	}
 
 	.column-tercio {
