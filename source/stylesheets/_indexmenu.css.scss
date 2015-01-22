@@ -1,38 +1,123 @@
 .proyect {
 	float: left;
 	width: 25%;
-	padding: 3px;
-	position: relative;
-	overflow: hidden;
+	display: inline-block;
+	padding-bottom: 4px;
+
 
 	a {
-		display: block;
+		display: inline-block;
 	}
 
 	img {
 		width: 100%;
 		display: block;
+
 	}
 
 	p {
-		text-transform: uppercase;
-		color: rgb(42,39,42); 	
-		letter-spacing: 3px;
-		font-size: 0.8em;
-		position: absolute;
-		padding:10px;
-		top:3px;
-		bottom:3px;
-		left:3px;
-		right:3px;
-		font-weight: 600;
-		background-color: rgba(199, 212, 245, 0.6);
-		z-index: -1000;
+
 	}
+
 }
 
 .proyect:hover {
 	p {
 		z-index: 1000;
 	}
+
+	a {
+		background-color: red;
+	}
+
+	.cover {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		display: block;
+		background-color: rgba(255, 200, 200, 0.9);
+	}
 }
+
+.proyect {
+	width:100%;
+	a {
+		width: 100%;
+		color: white;
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		position: relative;
+
+		p {
+			position: absolute;
+			top:50%;
+			width:100%;
+			text-align: center;
+		}
+	}
+	.cover {
+		display: none;
+	}
+}
+
+// // torreon
+// .proyect-1 {
+// 	width: 20%;
+// 	height: 100px;
+// 	position: absolute;
+// 	top: 7%;
+// 	left: 71%;
+
+// }
+
+// // estructura
+// .proyect-2 {
+// 	width: 20%;
+// 	height: 100px;
+// 	position: absolute;
+// 	left: 48%;
+// 	top: 28%;
+
+// }
+// // todoenorden
+// .proyect-3 {
+// 	width: 30%;
+// 	height: 400px;
+// 	position: absolute;
+// 	top: 7%;
+// }
+// // dunas
+// .proyect-4 {
+// 	width: 20%;
+// 	height: 80px;
+// 	position: absolute;
+// 	left: 42%;
+// 	top: 10%
+// }
+
+// // anfibio
+// .proyect-5 {
+// 	width: 20%;
+// 	height: 500px;
+// 	position: absolute;
+// 	left: 37%;
+// 	top: 60%;
+// }
+// // fosforo
+// .proyect-6 {
+// 	width: 20%;
+// 	height: 140px;
+// 	position: absolute;
+// 	top: 55%;
+// 	left: 15%
+// }
+// // archivo
+// .proyect-7 {
+// 	width: 25%;
+// 	height: 140px;
+// 	position: absolute;
+// 	top: 80%;
+// 	left: 60%;
+// }
