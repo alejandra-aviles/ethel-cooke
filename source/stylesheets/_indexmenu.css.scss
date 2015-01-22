@@ -1,12 +1,27 @@
 .proyect {
 	float: left;
-	width: 25%;
 	display: inline-block;
-	padding-bottom: 4px;
-
-
+	padding-bottom: 4px;	
+	width:100%;
 	a {
-		display: inline-block;
+		width: 100%;
+		color: white;
+		font-size: 0.8em;
+		letter-spacing: 1px;
+		position: relative;
+		display: block;
+
+		p {
+			position: absolute;
+			top:45%;
+			width:100%;
+			text-align: center;
+			font-size: 1.3em;
+			font-weight: 200;
+			letter-spacing: 1px;
+			padding:20px;
+			box-sizing: border-box;
+		}
 	}
 
 	img {
@@ -15,29 +30,15 @@
 
 	}
 
-	p {
-
+	.cover {
+		display: none;
 	}
-
 }
+
 
 .proyect:hover {
 	p {
 		z-index: 1000;
-		// text-shadow: 1px 1px rgba(0,0,0, 0.4), 1px -1px rgba(0,0,0, 0.4), -1px -1px rgba(0,0,0, 0.4), -1px 1px rgba(0,0,0, 0.4);
-	}
-
-	a {
-		// background-color: red;
-	}
-
-	img {
-		// -webkit-filter: blur(2px);
-	 //  	-moz-filter: blur(2px);
-	 //  	-o-filter: blur(2px);
-	 //  	-ms-filter: blur(2px);
-	 //  	filter: blur(2px);
-	 //  	transition: 0.1s -webkit-filter linear;
 	}
 
 	.cover {
@@ -47,94 +48,7 @@
 		right:0;
 		bottom:0;
 		display: block;
-		background-color: rgba(0,0,0, 0.5);
+		background-color: rgba(0,0,0,0.5);
 	}
 }
 
-.proyect {
-	width:100%;
-	a {
-		width: 100%;
-		color: white;
-		font-size: 0.8em;
-		letter-spacing: 1px;
-		position: relative;
-
-		p {
-			position: absolute;
-			top:45%;
-			width:100%;
-			text-align: center;
-			font-size: 1.5em;
-			font-weight: 200;
-			letter-spacing: 1px;
-		}
-
-		img {
-
-		}
-	}
-	.cover {
-		display: none;
-	}
-}
-
-// // torreon
-// .proyect-1 {
-// 	width: 20%;
-// 	height: 100px;
-// 	position: absolute;
-// 	top: 7%;
-// 	left: 71%;
-
-// }
-
-// // estructura
-// .proyect-2 {
-// 	width: 20%;
-// 	height: 100px;
-// 	position: absolute;
-// 	left: 48%;
-// 	top: 28%;
-
-// }
-// // todoenorden
-// .proyect-3 {
-// 	width: 30%;
-// 	height: 400px;
-// 	position: absolute;
-// 	top: 7%;
-// }
-// // dunas
-// .proyect-4 {
-// 	width: 20%;
-// 	height: 80px;
-// 	position: absolute;
-// 	left: 42%;
-// 	top: 10%
-// }
-
-// // anfibio
-// .proyect-5 {
-// 	width: 20%;
-// 	height: 500px;
-// 	position: absolute;
-// 	left: 37%;
-// 	top: 60%;
-// }
-// // fosforo
-// .proyect-6 {
-// 	width: 20%;
-// 	height: 140px;
-// 	position: absolute;
-// 	top: 55%;
-// 	left: 15%
-// }
-// // archivo
-// .proyect-7 {
-// 	width: 25%;
-// 	height: 140px;
-// 	position: absolute;
-// 	top: 80%;
-// 	left: 60%;
-// }
