@@ -5,28 +5,30 @@
 html, body {
 	font-size: 16px;
 	font-family: "jaf-facitweb";
-	background: rgb(15,16,16);
+	background: rgb(19,21,19);
 	color: rgb(236,245,245);
 	font-weight: 100;
 }
 h1 {
-	font-size: 1.6em;
+	font-size: 1.3em;
 	letter-spacing: 2.3px;
-	color: rgb(236,245,245);
-	font-weight: 400;
+	color: rgb(200,202,198);
+	font-weight: 300;
 	padding-bottom: 5px;
-	margin-bottom: 5px;
+	margin-bottom: -10px;
 }
 
 h2 {
+	font-size: 1em;
+	letter-spacing: 2.3px;
+	color: rgb(200,202,198);
+	font-weight: 100;
+	padding-bottom: 40px;
 
 }
 
 h3 {
-	font-size: 1.1em;
-	color:black;
-	letter-spacing: 1.5px;
-	padding-bottom: 20px;
+
 }
 
 h5 {
@@ -44,6 +46,9 @@ h6 {
 	font-size: 0.8em;
 }
 
+p {
+}
+
 em {
 	font-style: italic;
 }
@@ -56,8 +61,6 @@ a {
 a:hover {
 	color: white;
 } 
-
-
 
 .img-centered {
 	display: block;

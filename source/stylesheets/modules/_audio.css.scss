@@ -49,19 +49,19 @@
   }
 
   .progress {
-    background: rgb(129,159,178);
+    background: rgb(140,168,72);
   }
 }
 
 .audiojs .play-pause {
   border:none;
-  background: rgb(129,159,178);
+  background: rgb(140,168,72);
 }
 
 .audiojs .scrubber {
   margin:0;
   height: 36px;
-  background: rgb(200,200,200);
+  background: rgb(34,36,34);
   border: none;
 }
 
@@ -69,7 +69,7 @@
   background: none;
   position: absolute;
   right: -20px;
-  color: rgb(73,73,73);
+  color: grey;
   font-family: 'helvetica';
   border: none;
   text-shadow: none;

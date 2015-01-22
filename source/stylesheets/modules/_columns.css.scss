@@ -20,23 +20,24 @@
 	.column-medios {
 		width:50%;
 		p {
-		font-weight: 100;
-		line-height: 1.8em;
-		font-size: 0.8em;
-		letter-spacing: 0.7px;
+		text-align: justify;
+		line-height: 1.7em;
+		font-size: 1em;
+		font-weight: 300;
+		letter-spacing: 0.3px;
 		font-style: normal;
-		color: rgb(211,211,211);
+		color: rgb(200,202,198);
+		padding-right: 50px;
 		padding-bottom: 20px;
 		}
 		h3 {
-		font-weight: 100;
-		line-height: 1.5em;
+		text-align: justify;
+		line-height: 1.6em;
 		font-size: 0.8em;
-		letter-spacing: 0.7px;
-		font-style: normal;
-		color: rgb(181,186,169);
+		letter-spacing: 0.8px;
+		color: rgb(200,202,198);
 		padding-bottom: 20px;
-
+		padding-left: 80px;
 		}
 }
 

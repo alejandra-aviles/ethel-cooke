@@ -93,17 +93,17 @@
 }
 
 .slider-bullets {
-	font-size: 5em;
-	margin-top: -32px;
+	font-size: 3em;
 	line-height: 10px;
 	margin-bottom: 10px;
 	margin-right: 0px;
 	float: right;
+	margin-top:-10px;
 
 	.bullet {
 		display: block;
 		padding:0px;
-		padding-bottom: 7px;
+		padding-bottom: 3px;
 		float: left;
 		margin: 0;
 		color:#494949;
@@ -115,7 +115,7 @@
 	}
 
 	.bullet.active {
-		color: rgb(66, 144, 66);
+		color: rgb(140,168,72);
 	}
 }
 
