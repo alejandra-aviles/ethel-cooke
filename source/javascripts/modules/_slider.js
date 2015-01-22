@@ -19,32 +19,43 @@ $(document).ready(function(){
 			var bullet = $('<a class="bullet">&#8226;</a>').appendTo(element);
 			function addClickHandler(bullet, i){
 				bullet.click(function(){
+					notifyIndexChanged(i);
 					console.log("yay: " + i);
 				});
 			};
-			addClickHandler(bullet, i);
+			addClickHandler(bullet, i, notifyIndexChanged);
 		}
 	});
 
 	function increaseIndex(){
-		sliderIndex = sliderIndex == slides.length-1 ? 0 : sliderIndex+1;
-		notifyIndexChanged();
+		newIndex = sliderIndex == slides.length-1 ? 0 : sliderIndex+1;
+		notifyIndexChanged(newIndex);
 	}
 
 	function decreaseIndex(){
-		sliderIndex--;
-		notifyIndexChanged();	
+		notifyIndexChanged(sliderIndex-1);	
 	}
 
-	function notifyIndexChanged(){
+	function updateBullets(){
+		$('.slider-bullets').each(function(index, sliderBullets){
+			$('.bullet').removeClass("active");
+			var activeBullet = $('.bullet', sliderBullets)[sliderIndex];
+			$(activeBullet).addClass("active");
+		});
+	}
+
+	function notifyIndexChanged(index){
+		var previousIndex = sliderIndex;
+		sliderIndex = index;
 		sliderIndexes.text(sliderIndex+1);
+		updateBullets();
+		transition(previousIndex, sliderIndex);
 	}
 
 	function next(){
 		if(!isTransitioning) {
 			var previous = sliderIndex;
 			increaseIndex();
-			transition(previous, sliderIndex);
 		}
 	}
 
@@ -52,7 +63,6 @@ $(document).ready(function(){
 		if(!isTransitioning && 0 < sliderIndex) {
 			var previous = sliderIndex;
 			decreaseIndex();
-			transition(previous, sliderIndex);
 		}
 	}
 
@@ -74,5 +84,5 @@ $(document).ready(function(){
 	}
 
 	slides[0].show();
-	notifyIndexChanged();
+	notifyIndexChanged(0);
 });
